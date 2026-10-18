@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 17px;
+    box-shadow: 0px 2px 2px 2px gray;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav .logo{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+ul{
+    margin-right: 10px;
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li i{
+    font-size: 20px;
+}
+
+nav ul li #home{
+    color: rgb(26, 180, 180);
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+nav ul li i:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main .mainText{
+    font-size: 20px;
+}
+
+.mainText h1{
+    font-size: 48px;
+}
+
+.mainText .top{
+    color: rgb(64, 145, 145);
+}
+
+.mainText button{
+    width: 145px;
+    height: 40px;
+    background-color: rgb(33, 104, 104);
+    border: none;
+    font-size: 20px;
+    color: white;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+.mainText p{
+    margin-top: 12px;
+}
+
+.mainText button:hover{
+    border: 2px solid rgb(41, 94, 94);
+    color: rgb(71, 139, 139);
+    background-color: transparent;
+}
+
+.main img{
+    width: 400px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.head h1{
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.head span{
+    color: rgb(20, 214, 214);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+.trend .card .crd{
+    width: 280px;
+    background-color: white;
+    padding-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trend .head{
+    margin-bottom: 20px;
+}
+
+.crd img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.crdText{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.crdText h2{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.crd button{
+    width: 110px;
+    height: 33px;
+    border: none;
+    background-color: rgb(17, 78, 78);
+    color: white;
+    font-size: 16px;
+    margin-top: 11px;
+    cursor: pointer;
+}
+
+.crdText i{
+    color: orange;
+}
+
+.blog{
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 11px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog:hover{
+    transform: scale(1.02);
+}
+
+.blog img{
+    padding: 15px;
+    width: 50%;
+    object-fit: cover;
+}
+
+.blogText{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogText h2{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.blogText a{
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: rgb(43, 146, 146);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+.letter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: blue;
+    padding: 40px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inp{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.inp input{
+    width: 280px;
+    max-width: 100%;
+    height: 36px;
+    outline: none;
+    font-size: 16px;
+    border: none; 
+    padding: 0 10px;
+}
+
+.inp button{
+    width: 100px;
+    height: 36px;
+    background-color: rgb(13, 109, 109);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.inp .signbtn:hover{
+    color: rgb(0, 0, 0);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer .footerText{
+    min-width: 150px;
+}
+
+.footerText p{
+    margin-top: 11px; 
+}
+
+.about{
+    display: none;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.aboutus{
+    background-color: rgb(1, 1, 42);
+    color: white;
+    padding: 40px 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.me{
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.me img{
+    width: 40%;
+    object-fit: cover;
+}
+
+.aboutText{
+    width: 60%;
+}
+
+.contact{
+    display: none;
+}
+
+.contactus{
+    background-color: black;
+    color: #eee;
+    padding: 40px 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contactMe{
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    gap: 20px;
+}
+
+.contactMe img{
+    width: 50%;
+    object-fit: cover;
+}
+
+.contactText{
+    padding: 10px;
+    width: 50%;
+}
+
+.contactText p{
+    margin-top: 12px;
+}
+
+.form{
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 500px;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 11px;
+    border: 1px solid #ccc;
+}
+
+.form textarea{
+    height: 100px;
+    resize: vertical;
+}
+
+.form button{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(14, 102, 102);
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.cart{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 30px;
+    background: white;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.cart img{
+    width: 350px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.cartText{
+    padding: 10px;
+}
+
+.cartText p{
+    margin-top: 12px;
+}
+
+.cartText h2{
+    margin-top: 11px;
+}
+
+.cartText .btn button, .cartText .back{
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.cartText .btn button{
+    background-color: rgb(163, 112, 18);
+    margin-right: 10px;
+}
+
+.cartText .back{
+    background-color: rgb(18, 121, 121);
+}
+
+@media (max-width: 992px) {
+    .main{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .mainText h1{
+        font-size: 36px;
+    }
+
+    .me, .contactMe, .cart{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .me img, .aboutText, .contactMe img, .contactText{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li{
+        gap: 10px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    .blog{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .blog img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .letter{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inp{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .trend .card .crd{
+        width: 100%;
+    }
+
+    .cartText .btn button, .cartText .back{
+        width: 100%;
+        margin-inline: 0;
+    }
+}
